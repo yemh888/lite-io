@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   ~ Copyright (c) 2023, yemh888 (mh_c_y@163.com).
   ~
@@ -19,23 +20,40 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>top.codermhc</groupId>
+    <artifactId>lite-io</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
 
-  <groupId>top.codermhc</groupId>
-  <artifactId>lite-io</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <modules>
-    <module>lite-io-core</module>
-    <module>lite-io-spring-boot-starter</module>
-    <module>lite-io-test</module>
-  </modules>
+  <artifactId>lite-io-test</artifactId>
 
   <properties>
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <netty-version>4.1.70.Final</netty-version>
   </properties>
 
-
+  <dependencies>
+    <dependency>
+      <groupId>top.codermhc</groupId>
+      <artifactId>lite-io-spring-boot-starter</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>2.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.5</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-core</artifactId>
+      <version>1.2.5</version>
+    </dependency>
+  </dependencies>
 </project>

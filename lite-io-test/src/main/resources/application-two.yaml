@@ -1,0 +1,6 @@
+lite-io:
+  port: 1234
+  magic: 0x0badc0de
+  endpoints: 127.0.0.1:1233,127.0.0.1:1234
+server:
+  port: 8082
